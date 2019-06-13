@@ -5,14 +5,11 @@ import com.fatihku.dictionary.dictionant.service.WordService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequiredArgsConstructor
 public class WordController {
@@ -29,5 +26,4 @@ public class WordController {
     public void addWord(@RequestBody Word word) {
         wordService.addWord(word);
     }
-
 }

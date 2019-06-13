@@ -7,18 +7,22 @@ import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 @Builder
 @Data
 @AllArgsConstructor
-@Component
 public class Word {
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    @GeneratedValue
     long id;
     String word;
     String description;
-    Language language;
+    String language;
+
+    public Word() {
+
+    }
 }

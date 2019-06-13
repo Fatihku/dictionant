@@ -4,7 +4,7 @@ import {Observable} from "rxjs/index";
 import {Word} from "../model/word";
 
 @Injectable()
-export class WordServiceService {
+export class WordService {
   private wordsUrl: string;
 
   constructor( private http: HttpClient) {
