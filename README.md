@@ -1,0 +1,1 @@
+# Dictionant Spring Boot and Angular Basic Application
