@@ -20,12 +20,12 @@ public class WordController {
     @Autowired
     WordService wordService;
 
-    @GetMapping("/users")
+    @GetMapping("/words")
     public List<Word> getWords() {
         return wordService.getWords();
     }
 
-    @PostMapping("/users")
+    @PostMapping("/words")
     public void addWord(@RequestBody Word word) {
         wordService.addWord(word);
     }
