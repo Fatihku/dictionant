@@ -4,16 +4,17 @@
       <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Language</th>
         <th scope="col">Word</th>
         <th scope="col">Description</th>
+        <th scope="col">Language</th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let word of words">
-        <td>{{ word.language }}</td>
-        <td>{{ word.word }}</td>
+      <tr *ngFor="let word of words; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ word.name }}</td>
         <td>{{ word.description }}</td>
+        <td>{{ word.language }}</td>
       </tr>
       </tbody>
     </table>

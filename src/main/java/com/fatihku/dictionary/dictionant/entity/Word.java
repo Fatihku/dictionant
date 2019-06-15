@@ -18,7 +18,7 @@ public class Word {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     long id;
-    String word;
+    String name;
     String description;
     String language;
 

@@ -23,7 +23,7 @@ public class DictionantApplication {
 		return args -> {
 			Stream.of("Cat", "Dog", "Pig", "Bird", "Snake").forEach(s -> {
 				Word word = Word.builder()
-						.word(s)
+						.name(s)
 						.description("An animal")
 						.language("English")
 						.build();

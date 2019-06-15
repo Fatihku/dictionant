@@ -1,6 +1,6 @@
 export class Word {
   id: string;
-  word: string;
+  name: string;
   description: string;
   language: string;
 }
